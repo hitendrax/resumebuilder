@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeal</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-4">
+        <h1 class="text-3xl text-center">Welcome to Zeal</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#services" class="hover:underline">Services</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="p-6">
+        <section id="about" class="mb-8">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <p id="aboutContent" class="text-gray-700">I am a passionate web developer with a love for creating
+                beautiful and functional websites.</p>
+            <button id="updateAboutButton" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">Update About
+                Me</button>
+        </section>
+        <section id="services" class="mb-8">
+            <h2 class="text-2xl font-bold">My Services</h2>
+            <p class="text-gray-700">I offer a range of services including:</p>
+            <ul class="list-disc list-inside text-gray-700">
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+                <li>Consulting</li>
+            </ul>
+        </section>
+        <section id="contact" class="mb-8">
+            <h2 class="text-2xl font-bold">Contact Me</h2>
+            <p class="text-gray-700">Feel free to reach out via email at <a href="mailto:your-email@example.com"
+                    class="text-blue-500 hover:underline">your-email@example.com</a> or connect with me on social media.
+            </p>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2023 My Dynamic Homepage</p>
+    </footer>
+
+    <script>
+        // JavaScript to update the About Me section dynamically
+        document.getElementById('updateAboutButton').addEventListener('click', function () {
+            const aboutContent = document.getElementById('aboutContent');
+            aboutContent.innerHTML = 'I am a web developer with experience in building dynamic web applications using modern technologies. I love coding and learning new things!';
+        });
+    </script>
+</body>
+
+</html>

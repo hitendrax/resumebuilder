@@ -1,0 +1,36 @@
+/* style.css */
+
+/* Custom styles to override Tailwind defaults */
+body {
+    font-family: 'Times new Roman', sans-serif;
+    /* Change the default font */
+}
+
+/* Custom button styles */
+button {
+    transition: background-color 0.3s ease;
+    /* Smooth transition for button hover */
+}
+
+button:hover {
+    background -color: #3b82f6;
+    /* Change button color on hover */
+}
+
+/* Custom styles for the About Me section */
+#about {
+    border: 2px solid #e5e7eb;
+    /* Add a border around the About Me section */
+    padding: 1rem;
+    /* Add padding */
+    border-radius: 0.5rem;
+    /* Rounded corners */
+}
+
+/* Custom styles for the footer */
+footer {
+    background-color: #1f2937;
+    /* Darker background for footer */
+    color: #f9fafb;
+    /* Lighter text color */
+}
